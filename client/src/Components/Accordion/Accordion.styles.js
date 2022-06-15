@@ -2,8 +2,8 @@ import styled from 'styled-components';
 import theme from 'styled-theming';
 
 export const backgroundColor = theme('theme', {
-  light: '#fff',
-  dark: '#2d2d2d'
+  light: '#b3ecff',
+  dark: '#243145'
 });
 
 export const textColor = theme('theme', {
@@ -40,7 +40,7 @@ export const Wrap = styled.div`
   cursor: pointer;
   h1 {
     padding: 2rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   span {
     margin-right: 1.5rem;
@@ -61,6 +61,6 @@ export const Dropdown = styled.div`
   transition: all 0.5s linear;
 
   p {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 `;

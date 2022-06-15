@@ -47,7 +47,7 @@ const ContactForm = () => {
   });
 
   return (
-    <div data-testid="contact-form">
+    <Style.Container data-testid="contact-form">
       <form onSubmit={handleSubmit}>
         <Style.FormControl>
           <label htmlFor="name">Name</label>
@@ -95,13 +95,13 @@ const ContactForm = () => {
           ) : null}
         </Style.FormControl>
 
-        <button data-testid="button-submit" type="submit">
+        <Style.Button data-testid="button-submit" type="submit">
           Submit
-        </button>
+        </Style.Button>
         {/* it can be noted, that the <button> tag can be written without the submit type attribute, since it is wrapped
       inside the form tag, Formik automatically assigns the submit tag. */}
       </form>
-    </div>
+    </Style.Container>
   );
 };
 
